@@ -37,10 +37,11 @@ io.on('disconnect', function(socket){ //socket = way of sending message
 })
 
 
-//makes app listen for requests on port 3000
-server.listen(3000, function(){
+//makes app listen for requests on port
+var port = process.env.PORT || 3000 //this has changed so that we can deploy to heroku
+server.listen(port, function(){
   // console.log(server);
-  console.log("app listening on port 3000!")
+  console.log("app listening on port:" + port + "!")
 })
 
 //MAIN CLOCK
