@@ -59,9 +59,9 @@ socket.on('sendOutNotes',function(chord){
 
 // *** PLAY SECOND SET OF NOTES ***
 
-socket.on('sendOutShortNotes',function(noteShort){
-  synthTwo.triggerAttackRelease(noteShort,1)
-  document.body.style.backgroundColor = color();
-})
+// socket.on('sendOutShortNotes',function(noteShort){
+//   synthTwo.triggerAttackRelease(noteShort,1)
+//   document.body.style.backgroundColor = color();
+// })
 
 // *** END PLAY SECOND SET OF NOTES ***
