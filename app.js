@@ -66,11 +66,11 @@ var clock = setInterval(function(){
 
 // *** SECOND SET OF NOTES ***
 
-var clock2 = setInterval(function(){
-  var noteShortArray = ['c4', 'd4', 'e4', 'g4', 'a4', 'b4']
-  var noteShort = noteShortArray[Math.floor(Math.random()*noteShortArray.length)]
-  io.to(randUser(allConnections)).emit('sendOutShortNotes',noteShort);
-}, 998)
+// var clock2 = setInterval(function(){
+//   var noteShortArray = ['c4', 'd4', 'e4', 'g4', 'a4', 'b4']
+//   var noteShort = noteShortArray[Math.floor(Math.random()*noteShortArray.length)]
+//   io.to(randUser(allConnections)).emit('sendOutShortNotes',noteShort);
+// }, 998)
 
 // *** END SECOND SET OF NOTES ***
 
